@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "[*] Update repo"
+pkg update 
+sleep 2
+clear
+
+echo "[*] Install wireless-tools"
+pkg install wireless-tools
+sleep 2
+clear
+
+echo "[*] Setup"
+wget -q https://raw.githubusercontent.com/R1punk/wlan0mon/main/monen -O $PREFIX/bin/start && chmod +x $PREFIX/bin/start > /dev/null
+
+wget -q https://raw.githubusercontent.com/R1punk/wlan0mon/main/mondis -O $PREFIX/bin/stop && chmod +x $PREFIX/bin/stop > /dev/null
+
+sleep 2
+echo "[*] Done"
