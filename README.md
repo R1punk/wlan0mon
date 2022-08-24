@@ -17,5 +17,5 @@ git clone https://github.com/R1punk/wlan0mon && cd wlan0mon
 - ```chmod +x *```
 
 ## Usage:
-- ```start``` - Monitor mode
-- ```stop``` - Stop Monitor Mode
+- ```./monen``` - Monitor mode
+- ```./mondis``` - Stop Monitor Mode
